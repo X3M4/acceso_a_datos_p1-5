@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Persona implements Serializable{
     private String nombre;
     private String apellido;
-    private String dni;
+    private transient String dni;
 
     public Persona(String nombre, String apellido, String dni){
         this.nombre = nombre;
