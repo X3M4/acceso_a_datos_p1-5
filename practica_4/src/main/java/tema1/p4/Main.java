@@ -19,6 +19,8 @@ public class Main {
         String linea = "Desarrollo de Aplicaciones Multiplataforma";
         byte bt = -128;
 
+        //Se prueba si el archivo existe y de no existir lo crea y guarda los datos llamando a guardaDatos.
+        //De otra manera solo guarda datos
         try {
             if (!f.exists()) {
                 f.createNewFile();
@@ -29,6 +31,7 @@ public class Main {
                 guardaDatos(ruta, b, numero, decimal, d, caracter, linea, bt);
                 System.out.println("Datos guardados");
             }
+            //Llama a imprimeDatos para imprimir las variables por pantalla
             imprimeDatos(ruta);
         } catch (Exception e) {
             System.out.println("No se puede acceder o crear el fichero");
