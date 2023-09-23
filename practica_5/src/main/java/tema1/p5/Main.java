@@ -54,7 +54,7 @@ public class Main {
     //LLAMO A LA FUNCIÓN imprimePersonas PARA MOSTRAR POR PANTALLA LOS OBJETOS Persona
     public static void imprimePersonas(String ruta){
         try {
-            ObjectInputStream ois = new ObjectInputStream(new FileInputStream(ruta, true));
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream(ruta));
             try {
 
                 Persona p;
