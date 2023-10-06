@@ -20,7 +20,7 @@ import org.w3c.dom.Node;
 public class Main {
     public static void main(String[] args) {
         primeraParte();
-        //segundaParte();
+        segundaParte();
         terceraParte();
         //La función del último ejercicio la llamo desde terceraParte() pasándole el Document como argumento.
     }
