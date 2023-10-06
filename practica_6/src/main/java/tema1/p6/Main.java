@@ -95,7 +95,6 @@ public class Main {
 
             case "book":
             case "tvSeries":
-            case "season":
                 level = " ".repeat(8);
                 break;
 
